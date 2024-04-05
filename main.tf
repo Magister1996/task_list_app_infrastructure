@@ -57,7 +57,7 @@ resource "aws_elastic_beanstalk_environment" "team_dkr_eb_env" {
 # Create RDS PostgreSQL Database
 resource "aws_db_instance" "matt_team_dkr_db_instance" {
   engine            = "postgres"
-  instance_class    = "db.t2.micro"
+  instance_class    = "db.m5d.large"
   allocated_storage = 20
   identifier        = "matt-team-dkr-db-instance"
   username = "my_username"
